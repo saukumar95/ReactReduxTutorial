@@ -8,6 +8,10 @@ class AllForm extends Component {
                 return (
                     <li key={post.id}><h3>{post.title}</h3>
                         <p>{post.message}</p>
+                        <button>Edit</button>
+                        <button
+                            onClick={() => this.props.dispatch({ type: 'DELETE_POST', id: post.id })}>
+                            Delete</button>
                     </li>
                 )
             })

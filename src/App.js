@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App" >
-        <PostForm/>
+        <PostForm />
         <AllForm />
       </div>
     );
