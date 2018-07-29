@@ -35,9 +35,9 @@ class EditComponent extends Component {
                         </div>
                         <p />
                         <div className='row'>
-                            <div className='col-sm-4'></div>
+                            <div className='col-sm-3'></div>
                             <button className='btn btn-outline-success form-control col-sm-2'>Update</button>
-                            <div className='col-sm-1'></div>
+                            <div className='col-sm-3'></div>
                             <button className='btn btn-outline-secondary form-control col-sm-2' onClick={() => this.props.dispatch({ type: 'GO_BACK', editing: false })}>Back</button>
                             <div className='col-sm-3'></div>
                         </div>

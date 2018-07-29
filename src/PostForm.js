@@ -24,11 +24,7 @@ class PostForm extends Component {
     render() {
         return (
             <div>
-                <div className='row'>
-                    <div className='col-sm-5'></div>
-                    <h1>Create Post</h1>
-                    <div className='col-sm-5'></div>
-                </div>
+                <h1 className='text-center'>Create Post</h1>
                 <form onSubmit={this.handleSubmit}>
                     <div className='form-group'>
                         <div className='row'>
