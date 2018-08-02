@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
+const fs = require('fs');
 class PostForm extends Component {
 
     handleSubmit = (event) => {
@@ -17,6 +17,11 @@ class PostForm extends Component {
             type: 'ADD_POST',
             data
         });
+        fs.writeFile('mynewfile3.txt', `${this.getTitle.value}
+                                        ${this.getMessage.value}`, function (err) {
+            if (err) throw err;
+            console.log('Saved!');
+          });
         this.getTitle.value = ''
         this.getMessage.value = ''
     }
